@@ -1,10 +1,45 @@
 <!doctype html>
 <html lang="en" ng-app="">
+
 <head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
 
+<body>
+    <div class="container">
+        <header class="header">
+          <div class="smiley"></div>
+          <div class="logo"><h1>Automate This!</h1></div>
+        </header>
+        <section class="words">
+          <h2>Provide the following words:</h2>
+          <div class="text-inputs">
+          <input type="text" placeholder="Female Name" ng-model="femaleName" name="female-name"></input>
+          <input type="text" placeholder="Job Title" ng-model="jobTitle" name="job-title"></input>
+          <input type="text" placeholder="Tedious Task" ng-model="tediousTask" name="tedious-task"></input>
+          <input type="text" placeholder="Dirty Task" ng-model="dirtyTask" name="dirty-task"></input>
+          <input type="text" placeholder="Celebrity" ng-model="celebrity" name="celebrity"></input>
+          <input type="text" placeholder="Useless Skill" ng-model="uselessSkill" name="useless-skill"></input>
+          <input type="text" placeholder="Adjective" ng-model="adjective" name="adjective"></input>
+          <input type="text" placeholder="Obnoxious Celebrity" ng-model="obnoxiousCelebrity" name="obnoxious-celebrity"></input>
+          <input type="text" placeholder="Huge Number" ng-model="hugeNumber" name="huge-number"></input>
+        </div>
+
+        </section>
+        <section class="mad-libs">
+            <p>
+                {{femaleName}} was a {{jobTitle}} who loved technology. Although she loved parts of her job, she absolutely hated {{tediousTask}} and {{dirtyTask}}. So, {{femaleName}} met with her life mentor {{celebrity}} who told her to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{uselessSkill}} so she studied programming instead.
+            </p>
+            <p>
+                What a great decision! With her new skills, {{femaleName}} built a(n) {{adjective}} robot named {{obnoxiousCelebrity}} that not only loved {{dirtyTask}} but did it {{hugeNumber}} times faster.
+            </p>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
+
 </html>
