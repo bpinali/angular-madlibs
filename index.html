@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="myApp">
 
 <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -8,8 +8,8 @@
     <title></title>
 </head>
 
-<body>
-    <div class="container">
+<body ng-controller="MyCtrl">
+    <main class="container">
         <header class="header">
           <div class="smiley"></div>
           <div class="logo"><h1>Automate This!</h1></div>
@@ -37,7 +37,8 @@
                 What a great decision! With her new skills, {{femaleName}} built a(n) {{adjective}} robot named {{obnoxiousCelebrity}} that not only loved {{dirtyTask}} but did it {{hugeNumber}} times faster.
             </p>
         </section>
-    </div>
+        <footer>{{ version }}</footer>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
     <script src="scripts/app.js"></script>
 </body>
