@@ -5,10 +5,12 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-size: 18px;
 }
 .container {
     background-color: #fff;
     margin: 50px auto 0 auto;
+    padding: 0;
     width: 800px;
     border: 2px solid black;
     -webkit-border-radius: 6px;
@@ -50,21 +52,66 @@ body {
 h1 {
     font-size: 40px;
 }
-.words {
-    padding: 0 20px 20px 20px;
-    border-bottom: 2px solid black;
+.user-inputs {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+.radio-button {
+  padding-left: 20px;
+}
+input[type="radio"] {
+  margin-right: 8px;
+}
+button {
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 30px;
+  color: #fff;
+  border: 1px solid black;
+  background-color: red;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 .mad-libs {
     padding: 20px;
     width: 70%;
     margin: 0 auto;
     font-size: 18px;
-}
-.text-inputs {
     text-align: center;
 }
+.text-inputs {
+  padding: 0 20px 0 20px;
+}
 .text-inputs input {
-    margin: 10px;
-    padding: 5px;
+    margin: 15px 0 15px 0;
+    padding: 10px 0 10px 5px;
     font-size: 16px;
+    width: 100%;
+}
+.errorMsg, .gender-error {
+    color: red;
+    font-size: 14px;
+}
+.errorMsg {
+  text-align: left;
+}
+footer {
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 13px;
+}
+.pronouns {
+  color: #777;
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
 }

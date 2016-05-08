@@ -1,8 +1,16 @@
-angular.module('myApp', [])
+angular.module('myApp', ['ngMessages'])
     .constant('VERSION', 1.1)
     .controller('MyCtrl', function(VERSION, $scope) {
         $scope.version = VERSION;
-    })
-    .run(function(VERSION, $rootScope) {
-        $rootScope.version = VERSION;
+        $scope.data = {};
+        $scope.gender = {};
+        $scope.inputHide = false;
+        $scope.submit = function () {
+          $scope.inputHide = true;
+        };
+        $scope.reset = function () {
+          $scope.inputHide = false;
+          $scope.data = {};
+          location.reload();
+        };
     });
