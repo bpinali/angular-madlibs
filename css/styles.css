@@ -70,6 +70,16 @@ button {
     margin: 0 auto;
     font-size: 18px;
     text-align: center;
+    -webkit-transition: all linear 2s;
+    transition: all linear 2s;
+}
+.mad-libs.ng-enter,
+.mad-libs.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.mad-libs.ng-leave,
+.mad-libs.ng-enter.ng-enter-active {
+  opacity:1;
 }
 .text-inputs {
   padding: 0 20px 0 20px;

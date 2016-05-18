@@ -96,12 +96,12 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit">Generate MadLib</button>
+                        <button type="submit" ng-click="show=!show">Generate MadLib</button>
                     </div>
                 </div>
             </form>
         </section>
-        <section class="mad-libs" ng-show="inputHide && madLib.$valid">
+        <section ng-if="show" class="mad-libs" ng-show="inputHide && madLib.$valid">
             <p>
                 {{data.femaleName}} was a {{data.jobTitle}} who loved technology. Although <span class="pronouns">{{gender.heShe}}</span> loved parts of her job, <span class="pronouns">{{gender.heShe}}</span> absolutely hated {{data.tediousTask}} and
                 {{data.dirtyTask}}. So, {{data.femaleName}} met with <span class="pronouns">{{gender.hisHer}}</span> life mentor {{data.celebrity}} who told <span class="pronouns">{{gender.himHer}}</span> to learn {{data.uselessSkill}} with Thinkful.
@@ -118,6 +118,7 @@
         <footer>ngMadLibs version {{ version }}</footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.5/angular-animate.js"></script>
     <script src="scripts/angular-messages.js"></script>
     <script src="scripts/app.js"></script>
 </body>

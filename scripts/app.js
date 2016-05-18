@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngMessages'])
+angular.module('myApp', ['ngMessages','ngAnimate'])
     .constant('VERSION', 1.1)
     .controller('MyCtrl', function(VERSION, $scope) {
         $scope.version = VERSION;
